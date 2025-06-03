@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Steinbec";
+    src: url("Maison.woff2");
+    font-stretch: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Khalos";
+    src: url("Khalos-Display.woff2");
+    /* font-style: normal; */
+    /* font-weight: 400; */
+    font-stretch: normal;
+    font-display: swap;
+}
