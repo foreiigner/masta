@@ -39,6 +39,22 @@
                 /* --dynamic_f_color: #4f1e50;
                 --dynamic_f_color_header: #fff; */
             }
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader.hidden {
+    display: none;
+}
             /*
 ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
 *//*
@@ -1992,6 +2008,17 @@ body.subpage .project_wrap {
   </head>
 
   <body class="bg-a_bg intro dark" data-page="">
+
+    <div id="loader">
+        <img src="replacements/favicon.png" alt="Loading...">
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            const loader = document.getElementById('loader');
+            loader.classList.add('hidden');
+        });
+    </script>
 
          
 <header class="fixed top-0 left-0 z-50 w-full">
