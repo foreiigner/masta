@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://www.foreiigner.com/</loc>
-  <lastmod>2025-06-07T13:49:01+00:00</lastmod>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://foreiigner.com/index.html</loc>
+    <lastmod>2025-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://foreiigner.com/2023/commissions.html</loc>
+    <lastmod>2025-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://foreiigner.com/2023/transparent.html</loc>
+    <lastmod>2025-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://foreiigner.com/2023/commissions/17patterns.html</loc>
+    <lastmod>2025-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://foreiigner.com/2023/commissions/breitling.html</loc>
+    <lastmod>2025-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://foreiigner.com/2023/commissions/mecca.html</loc>
+    <lastmod>2025-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://foreiigner.com/2023/commissions/msn.html</loc>
+    <lastmod>2025-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://foreiigner.com/2023/commissions/showreel.html</loc>
+    <lastmod>2025-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://foreiigner.com/2023/commissions/who_what_wear_cover.html</loc>
+    <lastmod>2025-07-08</lastmod>
+  </url>
 </urlset>
