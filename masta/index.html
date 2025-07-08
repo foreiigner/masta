@@ -2028,7 +2028,18 @@ body.subpage .project_wrap {
         const loader = document.getElementById('loader');
 
         heroVideo.addEventListener('canplaythrough', function() {
+            console.log('Video canplaythrough event fired.');
             loader.classList.add('hidden');
+        });
+
+        heroVideo.addEventListener('error', function(e) {
+            console.error('Video loading error:', e);
+            // Fallback: hide loader even if video fails to load
+            loader.classList.add('hidden');
+        });
+
+        heroVideo.addEventListener('loadeddata', function() {
+            console.log('Video loadeddata event fired.');
         });
     </script>
 
