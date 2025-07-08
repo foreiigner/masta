@@ -2024,22 +2024,10 @@ body.subpage .project_wrap {
     </div>
 
     <script>
-        const heroVideo = document.getElementById('heroVideo');
         const loader = document.getElementById('loader');
 
-        heroVideo.addEventListener('canplaythrough', function() {
-            console.log('Video canplaythrough event fired.');
+        window.addEventListener('load', function() {
             loader.classList.add('hidden');
-        });
-
-        heroVideo.addEventListener('error', function(e) {
-            console.error('Video loading error:', e);
-            // Fallback: hide loader even if video fails to load
-            loader.classList.add('hidden');
-        });
-
-        heroVideo.addEventListener('loadeddata', function() {
-            console.log('Video loadeddata event fired.');
         });
     </script>
 
