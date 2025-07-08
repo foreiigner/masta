@@ -11,7 +11,7 @@
     <meta property="og:title" content="FOREIIGNER" />
     <meta property="og:description" content="FOREIIGNER is a creative artist working across advertising, music videos, and software engineering. His unique perspective allows him to create eye-catching pieces of modern art for major brands and artists." />
     <meta property="og:url" content="index.html" />
-    <!-- <meta property="og:image" content="https://augustynka.com/graph/foto1.jpg" /> -->
+    <!-- <meta property="og:image" content="https://www.foreiigner.com/graph/foto1.jpg" /> -->
     <link rel="icon" href="replacements/favicon.png" type="image/png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,10 +21,10 @@
     <meta name="description" content="The portfolio of Foreiigner, a software engineer, visual artist, and director.">
     <meta name="keywords" content="Foreiigner, software engineer, visual artist, director, portfolio, web developer, creative">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="2023/locomotive-scroll.min.css">
-    <link rel="stylesheet" href="2023/fonts.css">
+    <link rel="stylesheet" href="2025/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="2025/fonts.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-    <script src="2023/locomotive-scroll.min.js"></script>
+    <script src="2025/locomotive-scroll.min.js"></script>
 
             <style>
             body {
@@ -54,6 +54,16 @@
 
 #loader.hidden {
     display: none;
+}
+
+@keyframes zoom-in-out {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+#loader img {
+    animation: zoom-in-out 2s infinite ease-in-out;
 }
             /*
 ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
@@ -1717,7 +1727,7 @@ body.portret #about #ania_portret {
 }
 
 #NOT_about p a::after {
-  content: url("2023/img/ania.jpg");
+  content: url("2025/img/ania.jpg");
   display: block;
   position: absolute;
   width: 25vw;
@@ -2014,8 +2024,10 @@ body.subpage .project_wrap {
     </div>
 
     <script>
-        window.addEventListener('load', function() {
-            const loader = document.getElementById('loader');
+        const heroVideo = document.getElementById('heroVideo');
+        const loader = document.getElementById('loader');
+
+        heroVideo.addEventListener('canplaythrough', function() {
             loader.classList.add('hidden');
         });
     </script>
@@ -2081,7 +2093,7 @@ body.subpage .project_wrap {
 
 <section ddata-scroll-section id="intro" class="relative z-10 flex items-center justify-center w-full h-screen bg-blue-500">
 
-    <video src='2023/cont/intro.mp4' muted loop playsinline class="object-cover w-full h-full"></video>
+    <video id="heroVideo" src='2025/cont/intro.mp4' muted loop playsinline class="object-cover w-full h-full"></video>
 
     <div class="absolute rotate-90 -translate-x-1/2 opacity-0 intro_arrow bottom-8 left-1/2">
     <svg width="33" height="20" viewBox="0 0 33 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2226,7 +2238,7 @@ body.subpage .project_wrap {
 
 
 <section ddata-scroll-section id="contact" class="relative flex flex-col items-center justify-center min-h-screen overflow-hidden text-center">
-    <img id="trawa" src='2023/img/trawa.webp' class="absolute bottom-0 left-0 block object-cover object-top w-full h-full duration-1000 pointer-events-none" alt="">
+    <img id="trawa" src='2025/img/trawa.webp' class="absolute bottom-0 left-0 block object-cover object-top w-full h-full duration-1000 pointer-events-none" alt="">
     <div class="relative text-a_blue dark:text-a_blue_dark">
         <p class="mb-4 font-sans">
             REACH OUT AT:
@@ -2266,14 +2278,14 @@ body.subpage .project_wrap {
 </svg>
 </div> -->
     <video id="cursor" playsinline muted loop class="hidden md:block">
-        <source src="2023/cursor.qt" type='video/mp4'>
-        <source src="2023/cursor.webm" type='video/webm'>
+        <source src="2025/cursor.qt" type='video/mp4'>
+        <source src="2025/cursor.webm" type='video/webm'>
     </video>
 
     <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
     <!-- <script src="https://unpkg.com/@lottiefiles/jlottie@latest/dist/jlottie.min.js" type="module"></script> -->
-        <script src="2023/locomotive-scroll.min.js"></script>
-    <script src="2023/js_dist/scriptsdd75.js?q=1678124204"></script>
+        <script src="2025/locomotive-scroll.min.js"></script>
+    <script src="2025/js_dist/scriptsdd75.js?q=1678124204"></script>
     <!-- Demo Purpose -->
     <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
 
@@ -2281,5 +2293,5 @@ body.subpage .project_wrap {
 
   </body>
 
-<!-- Mirrored from augustynka.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Jun 2025 13:38:53 GMT -->
+
 </html>
